@@ -1,0 +1,240 @@
+#navPagina {
+    background: #000;
+    border-bottom: 1px solid white;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 10px 10px 10px 10px;
+    width: 120px;
+    padding: 5px;
+    margin: 10px 70px;
+    text-align: center;
+}
+
+nav ul li a {
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica;
+}
+
+main {
+    margin-left: 50px;
+}
+
+header {
+    border-bottom: 1px solid white;
+    padding: 5px;
+    background: #000;
+    margin: 0;
+    text-align: center;
+}
+
+#principal {
+    display: flex;
+    flex-flow: row;
+    background-color: aliceblue;
+    margin: 0;
+}
+
+main {
+    flex: 3;
+    order: 1;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+aside {
+    flex: 1;
+    order: 2;
+    display: flex;
+    flex-flow: column;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#publicidad {
+    height: 200px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+section {
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+article {
+    padding: 20px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-bottom: solid thin grey;
+}
+
+article div h2 {
+    display: inline-block;
+}
+
+#live {
+    display: inline-block;
+    border: 2px solid;
+    padding: 2px 15px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#autorFecha {
+    font-size: 12px;
+}
+
+#autorFecha footer {
+    display: inline-block;
+}
+
+#autorFecha time {
+    display: inline-block;
+}
+
+div {
+    margin: 10px;
+}
+
+#popular {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+#popular ol {
+    padding-left: 0;
+}
+
+#popular nav {
+    background-color: aliceblue;
+}
+
+#aside-titulo {
+    font-size: 20px;
+    color: #777;
+    padding-top: 12px;
+}
+
+#popular li {
+    border-bottom: 1px solid #e9e9e9;
+    list-style: none;
+    font-size: 15px;
+}
+
+#aside-contenido {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#redesSociales span {
+    display: inline-block;
+    font-size: 30px;
+    color: black;
+}
+
+#redesSociales{
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+}
+
+#redesSociales #aside-contenido{
+    margin: 0;
+    margin-left: 10px;
+}
+
+#redesSociales h3 a {
+    text-decoration: none;
+}
+
+#redesSociales h3 {
+    display: inline-block;
+}
+
+#footerPagina {
+    padding-top: 20px;
+    background-image: linear-gradient(grey, black);
+}
+
+#iconos {
+    display: inline-block;
+}
+
+#iconos a {
+    color: white;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+#iconos a span:hover {
+    transform: scale(1.2, 1.2);
+}
+
+#logo {
+    display: inline-block;
+}
+
+#contenidoFooter {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+#contenidoFooter div ol li {
+    overflow: hidden;
+    position: relative;
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#contenidoFooter div ol li a {
+    color: white;
+    text-decoration: none;
+}
+
+#autorPagina {
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+@keyframes animacion {
+    50% {
+        fill: white;
+    }
+    50% {
+        fill: red;
+    }
+}
+
+svg {
+    fill: white;
+    stroke: black;
+    stroke-width: 1;
+    animation-name: animacion;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
